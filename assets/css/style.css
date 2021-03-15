@@ -32,7 +32,7 @@ main {
 .container-menu ul li {
     list-style: none;
     padding: 20px;
-    margin-top: 63px;
+    margin-top: 50px;
 }
 
 .container-menu ul li:nth-child(5) {
@@ -52,12 +52,12 @@ main {
 }
 
 .container-content-text {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     align-content: center;
-    width: 600px;
-    margin-left: 167px;
-    margin-top: 280px;
+    width: 485px;
+    margin: 20vh;
     flex-direction: column;
 }
 
@@ -73,10 +73,35 @@ main {
 }
 
 .container-content-text .sub-title {
-    display: flex;
     text-align: justify;
+    display: inline;
     width: 470px;
     margin-top: 20px;
     font-size: 18px;
+}
+
+.container-about {
+    background-color: #3D3D3D;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    position: relative;
+}
+
+.container-about .about {
+    background: red;
+}
+
+.container-about .about h1 {
+    color: #CD84F1;
+    font-size: 64px;
+}
+
+.container-about .about-image img {
+    position: absolute;
+    width: 546px;
+    margin-top: 150px;
+    margin-left: 75px;
 }
 
