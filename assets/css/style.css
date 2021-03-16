@@ -57,7 +57,7 @@ main {
     align-items: center;
     align-content: center;
     width: 485px;
-    margin: 20vh;
+    margin: 120px;
     flex-direction: column;
 }
 
@@ -84,24 +84,32 @@ main {
     background-color: #3D3D3D;
     color: white;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    height: 95vh;
     position: relative;
 }
 
 .container-about .about {
-    background: red;
+    margin: 100px 0 0 100px;
+    text-align: justify;
+    width: 450px;
+    padding: 20px;
 }
 
 .container-about .about h1 {
     color: #CD84F1;
     font-size: 64px;
+    margin-bottom: 30px;
 }
 
-.container-about .about-image img {
-    position: absolute;
-    width: 546px;
-    margin-top: 150px;
-    margin-left: 75px;
+.container-about .line {
+    width: 10px;
+    height: 500px;
+    background: #CD84F1;
+    margin: 80px auto;
 }
 
+.container-about img {
+    width: 501px;
+    margin: 134px 101px 0 0;
+}
