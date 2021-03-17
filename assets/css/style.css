@@ -63,8 +63,8 @@ main {
 
 .container-content-text .title h1{
     font-size: 74px;
-    font-weight: normal;
-    box-sizing: border-box;
+    font-weight: bold;
+
 }
 
 .container-content-text .title span {
@@ -97,15 +97,17 @@ main {
 }
 
 .container-about .about h1 {
-    color: #CD84F1;
+    color: #9400ff;
     font-size: 64px;
     margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .container-about .line {
     width: 10px;
     height: 500px;
-    background: #CD84F1;
+    background: #9400ff;
     margin: 80px auto;
 }
 
@@ -115,23 +117,37 @@ main {
 }
 
 .wrapper {
-    background-color: #cd84f1;
+    background-color: #9400ff;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper > h1 {
+    position: absolute;
+    color: #fff;
+    left: 40%;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    margin: 24px;
-    height: 80%;
+    margin: 90px 20px 0 0;
+    height: 75%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
     top: 0;
     transition: all 100ms ease-in;
+}
+
+.card:first-of-type {
+    margin-left: 20px;
 }
 
 .card:hover {
@@ -167,6 +183,18 @@ main {
 }
 
 .card__content button:hover {
-    background: #cd84f1;
+    background: #9400ff;
     color: #fff;
+}
+
+.wrapper.solar-system {
+    background-color: #3D3D3D;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card.card-solar-system {
+    margin-top: 90px;
 }
