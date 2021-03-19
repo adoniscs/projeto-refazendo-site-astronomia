@@ -122,16 +122,18 @@ main {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    position: relative;
 }
 
 .wrapper > h1 {
     position: absolute;
     color: #fff;
-    left: 40%;
+    text-align: center;
     margin: 20px auto;
     font-weight: bold;
     font-size: 28px;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .card {
@@ -197,4 +199,73 @@ main {
 
 .card.card-solar-system {
     margin-top: 90px;
+}
+
+.container-contact {
+    height: 100vh;
+    width: 100%;
+    background: #9400ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-contact h3 {
+    position: absolute;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    top: 39px;
+}
+
+.container-contact .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    height: 450px;
+    width: 400px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.container-contact .contact label {
+    font-size: 18px;
+    margin: 0 22px 10px;
+}
+
+.container-contact .contact input[type="text"],
+.contact input[type="email"]{
+    width: 350px;
+    margin: 10px 0 20px 20px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .4);
+    font-size: 18px;
+    outline: none;
+}
+
+.container-contact .contact textarea {
+    width: 350px;
+    margin: 10px auto;
+    height: 80px;
+}
+
+.container-contact .contact button {
+    width: 350px;
+    margin: 0 auto;
+    padding: 12px;
+    border: none;
+    background-color: #fffa65;
+    color: #3d3d3d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+.container-contact .contact button:hover {
+    background: #9400ff;
+    color: #fff;
 }

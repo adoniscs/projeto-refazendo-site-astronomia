@@ -126,19 +126,16 @@
     </section>
 
     <section class="container-contact">
-        <label>
-            Nome
-            <input type="text">
-        </label>
-        <label>
-            E-mail
-            <input type="email">
-        </label>
-        <label>
-            Nome
-            <input type="text">
-        </label>
-        <input type="button" value="Enviar">
+        <h3>contato</h3>
+        <form class="contact">
+            <label for="name">Nome</label>
+                <input type="text" required>
+            <label for="email">E-mail</label>
+                <input type="email" required>
+            <label for="msg">Mensagem</label>
+                <textarea required></textarea>
+            <button type="submit">Enviar sua mensagem</button>
+        </form>
     </section>
 </body>
 </html>
